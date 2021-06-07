@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="alisahindbDataSet" targetNamespace="http://tempuri.org/alisahindbDataSet.xsd" xmlns:mstns="http://tempuri.org/alisahindbDataSet.xsd" xmlns="http://tempuri.org/alisahindbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="alisahindbConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="alisahindbConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OtomasyonModern.Properties.Settings.GlobalReference.Default.alisahindbConnectionString1" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="bolumTableAdapter" GeneratorDataComponentClassName="bolumTableAdapter" Name="bolum" UserDataComponentName="bolumTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="alisahindbConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `bolumId`, `bolumAd`, `bolumTel` FROM `bolum`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="musteriTableAdapter" GeneratorDataComponentClassName="musteriTableAdapter" Name="musteri" UserDataComponentName="musteriTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="alisahindbConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `musteriId`, `musteriAd`, `musteriTel`, `musteriAdres` FROM `musteri`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="personelTableAdapter" GeneratorDataComponentClassName="personelTableAdapter" Name="personel" UserDataComponentName="personelTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="alisahindbConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `personelId`, `personelAd`, `personelTel`, `personelAdres`, `bolumNo` FROM `personel`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="urunTableAdapter" GeneratorDataComponentClassName="urunTableAdapter" Name="urun" UserDataComponentName="urunTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="alisahindbConnectionString1 (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `urunId`, `urunAd`, `urunFiyat` FROM `urun`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="alisahindbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="alisahindbDataSet" msprop:Generator_UserDSName="alisahindbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="bolum" msprop:Generator_TableClassName="bolumDataTable" msprop:Generator_TableVarName="tablebolum" msprop:Generator_TablePropName="bolum" msprop:Generator_RowDeletingName="bolumRowDeleting" msprop:Generator_RowChangingName="bolumRowChanging" msprop:Generator_RowEvHandlerName="bolumRowChangeEventHandler" msprop:Generator_RowDeletedName="bolumRowDeleted" msprop:Generator_UserTableName="bolum" msprop:Generator_RowChangedName="bolumRowChanged" msprop:Generator_RowEvArgName="bolumRowChangeEvent" msprop:Generator_RowClassName="bolumRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="musteri" msprop:Generator_TableClassName="musteriDataTable" msprop:Generator_TableVarName="tablemusteri" msprop:Generator_TablePropName="musteri" msprop:Generator_RowDeletingName="musteriRowDeleting" msprop:Generator_RowChangingName="musteriRowChanging" msprop:Generator_RowEvHandlerName="musteriRowChangeEventHandler" msprop:Generator_RowDeletedName="musteriRowDeleted" msprop:Generator_UserTableName="musteri" msprop:Generator_RowChangedName="musteriRowChanged" msprop:Generator_RowEvArgName="musteriRowChangeEvent" msprop:Generator_RowClassName="musteriRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="personel" msprop:Generator_TableClassName="personelDataTable" msprop:Generator_TableVarName="tablepersonel" msprop:Generator_TablePropName="personel" msprop:Generator_RowDeletingName="personelRowDeleting" msprop:Generator_RowChangingName="personelRowChanging" msprop:Generator_RowEvHandlerName="personelRowChangeEventHandler" msprop:Generator_RowDeletedName="personelRowDeleted" msprop:Generator_UserTableName="personel" msprop:Generator_RowChangedName="personelRowChanged" msprop:Generator_RowEvArgName="personelRowChangeEvent" msprop:Generator_RowClassName="personelRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="urun" msprop:Generator_TableClassName="urunDataTable" msprop:Generator_TableVarName="tableurun" msprop:Generator_TablePropName="urun" msprop:Generator_RowDeletingName="urunRowDeleting" msprop:Generator_RowChangingName="urunRowChanging" msprop:Generator_RowEvHandlerName="urunRowChangeEventHandler" msprop:Generator_RowDeletedName="urunRowDeleted" msprop:Generator_UserTableName="urun" msprop:Generator_RowChangedName="urunRowChanged" msprop:Generator_RowEvArgName="urunRowChangeEvent" msprop:Generator_RowClassName="urunRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
